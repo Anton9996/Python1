@@ -10,7 +10,7 @@
 num1 = int(input('Первое число - '))
 num2 = int(input('Второе число - '))
 
-if num1 == num2*num2:
-    print(f'{num1} яв-ся квадратом {num2}')
+if num1 == num2*num2 or num2 == num1*num1:
+    print(f'{num1},{num2} -> да')
 else:
-    print(f'{num1} НЕ яв-ся квадратом {num2}')
+    print(f'{num1},{num2} -> нет')
