@@ -1,0 +1,10 @@
+sp = []
+for i in range(3):
+    sp1=[]
+    for j in range(3):
+        sp1.append(i+j)
+    sp.append(sp1)
+
+for i in range(len(sp)):
+    print(sp[i])
+
