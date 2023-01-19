@@ -1,10 +1,23 @@
-sp = []
-for i in range(3):
-    sp1=[]
-    for j in range(3):
-        sp1.append(i+j)
-    sp.append(sp1)
+# Напишите программу, которая по
+#  заданному номеру четверти, 
+# показывает диапазон возможных 
+# координат точек в этой четверти (x и y).
 
-for i in range(len(sp)):
-    print(sp[i])
+def diapason(num):
+    if num == 1: 
+        print(f'- {num} -> Диапазон X от 0 до +inf || Y от 0 до +inf ')
+    elif num == 2: 
+        print(f'- {num} -> Диапазон X от 0 до -inf || Y от 0 до +inf ')
+    elif num == 3: 
+        print(f'- {num} -> Диапазон X от 0 до -inf || Y от 0 до -inf ')
+    elif num == 4: 
+        print(f'- {num} -> Диапазон X от 0 до +inf || Y от 0 до -inf ')
+    else:
+        print(f'Укажите значения в дипазоне от 1 до 4')
 
+
+try:
+    num = int(input('Введите номер четверти:  '))
+    diapason (num)
+except:
+    print ('Введено не число')
